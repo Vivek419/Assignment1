@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h1>Longest word in the srting</h1><br>
+         String:<input type="text" id="str" name="str"><br>
+         <button onclick="find(document.getElementById('str').value)">Find</button>
+        <p id="result"></p>
+        <script>
+        function find(str){
+        var words=str.split(" ")
+        console.log(words)
+        var long=0
+        var word=null
+        for(var i=0;i<words.length;i++){
+            if(long<words[i].length)
+            {long=words[i].length
+              word=words[i] 
+            }
+        }
+        document.getElementById("result").innerHTML=word
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <h1>Find Word In String</h1><br>
+        <p id="String"></p>
+        <input type="text" id="word" name="word">
+        <button onclick="find(document.getElementById('word').value)">Find</button>
+        <p id="result"></p>
+        <script>
+         var Str="He is the Best player";
+         document.getElementById("String").innerHTML=Str;
+         function find(word){
+         var splt=Str.split(" ");
+         console.log(splt)
+         var res=splt.indexOf(word)
+         if(res==-1)
+         {
+            document.getElementById("result").innerHTML="I can't find "+word+" :(";
+         }
+         else
+         document.getElementById("result").innerHTML="I found "+word+" at "+(res+1);
+         }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <h1>Unsorted To Sorted</h1><br>
+        <p id="num"></p>
+        <button onclick="sort()">Sort</button><br>
+        <p id="result"></p>
+        <script>
+            var numbers=[4,7,1,6,3,2];
+            document.getElementById("num").innerHTML=numbers;
+         function sort(){
+             var srt=numbers.sort((n1,n2)=>n1-n2)
+             document.getElementById("result").innerHTML=srt;  
+         }
+        </script>
+    </body>
+</html>

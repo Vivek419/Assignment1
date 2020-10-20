@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <h1>Sort The Array By Length</h1><br>
+        <input type="text" id="str" name="str"><br>
+        <button onclick="sort(document.getElementById('str').value)">Sort</button>
+        <br><p id="result"></p>
+        <script>
+          function sort(str){
+             var splt=str.split(" ")
+             console.log(splt)
+             var sort=splt.sort((first,second)=>first.length-second.length);
+             var res=sort.join(' ')
+             document.getElementById("result").innerHTML=res;
+          }
+        </script>
+    </body>
+</html>

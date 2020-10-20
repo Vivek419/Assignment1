@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <h1>Count True Value</h1><br><br>
+         <p id="count"></p><br>
+         <button onclick="Cv()">Count</button>
+         <p id="value"></p>
+        <script>
+            var CountValue = ["true", "false","true","false", "true" ,"false"];
+            document.getElementById("count").innerHTML= CountValue;
+            var x;
+            var count=0
+            function Cv(){
+            for(x in CountValue){
+                if(CountValue[x]=="true")
+                {count++}
+            }
+            document.getElementById("value").innerHTML= count;
+            }
+        </script>
+    </body>
+</html>

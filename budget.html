@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <h1>Sum of People Budget</h1><br>
+        <p id="record"></p>
+        <p id="result"></p>
+        <script>
+           var getBudgets=[{name:"John",age:21,budget:23000},{name:"Steve",age:32,budget:40000},{name:"Martin",age:16,budget:2700}];
+           var record =getBudgets.map((item)=>JSON.stringify(item));
+           console.log(record)
+           document.getElementById("record").innerHTML=record;
+           var sum=0
+           var bug =getBudgets.map((item)=> sum+=item.budget);
+           document.getElementById("result").innerHTML="Sum of Budget: "+ sum;
+        </script>
+    </body>
+</html>
